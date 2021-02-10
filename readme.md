@@ -14,6 +14,7 @@
 |  2  |            JavaScript에 발 담그기            | JavaScript building blocks |
 |  3  |    어떤게 잘못됐나요? JavaScript 문제해결    | Troubleshooting JavaScript |
 |  5  | 자바스크립트의 기본적인 연산 - 숫자와 연산자 |   numbers and operators    |
+|  7  |             문자열 제대로 다루기             |   Useful string methods    |
 
 ### 2. JavaScript 구성 요소 ( JavaScript building blocks )
 
