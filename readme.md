@@ -2,15 +2,15 @@
 
 ## [ 1 ] 공부 자료
 
-- [JavaScript MDN Web docs](https://developer.mozilla.org/ko/docs/Web/JavaScript)
+Link : [JavaScript MDN Web docs](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 
 ## [ 2 ] Code examples (Github)
 
-- [mdn/learning-area](https://github.com/mdn/learning-area)
+Link : [mdn/learning-area](https://github.com/mdn/learning-area)
 
 ## [ 3 ] 학습과정 ( For complete beginners )
 
-### 1. 자바스크립트 첫걸음 ( JavaScript first steps )
+### 자바스크립트 첫걸음 ( JavaScript first steps )
 
 |      |                    과정명                    |            폴더명             |
 | :--: | :------------------------------------------: | :---------------------------: |
@@ -23,10 +23,10 @@
 |      |
 | 평가 |            바보같은 이야기 생성기            |     Silly-story-generator     |
 
-### 2. JavaScript 구성 요소 ( JavaScript building blocks )
+### JavaScript 구성 요소 ( JavaScript building blocks )
 
-### 3. JavaScript 객체 소개 ( Introducing JavaScript objects )
+### JavaScript 객체 소개 ( Introducing JavaScript objects )
 
-### 4. 비동기 JavaScript ( JavaScript first steps )
+### 비동기 JavaScript ( JavaScript first steps )
 
-### 5. 클라이언트측 웹 API ( Asynchronous JavaScript )
+### 클라이언트측 웹 API ( Asynchronous JavaScript )
