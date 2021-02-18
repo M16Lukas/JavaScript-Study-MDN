@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function start</title>
+    <style>
+      .msgBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 242px;
+        background: #eee;
+      }
+
+      .msgBox p {
+        line-height: 1.5;
+        padding: 10px 20px;
+        padding-left: 82px;
+        background-position: 25px center;
+        background-repeat: no-repeat;
+        color: #333;
+      }
+
+      .msgBox button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.1rem;
+        color: #aaa;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button>Display message box</button>
+    <div></div>
+    <script>
+      /*
+      <div class="msgBos">
+        <p>This is a message box</p>
+        <button>x</button>
+      </div>
+      */
+      function displayMessage(msgText, msgType) {
+        const html = document.querySelector('html');
+
+        // document.querySelector() : <div> element를 생성한 후 panel 변수에 저장
+        const panel = document.querySelector('div');
+        
+        // Element.setAttribute() : class 속성을 만들고 이름은 msgBox로 지정
+        panel.setAttribute('class', 'msgBox');
+
+        // Node.appendChild() : html 변수 안의 element에 panel 변수에 저장된 <div> elemet를 자식 elemet로 삽입
+        html.appendChild(panel);
+
+        const msg = document.createElement('p');
+        msg.textContent = msgText;
+        panel.appendChild(msg);
+
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = 'x';
+        panel.appendChild(closeBtn);
+
+        closeBtn.onclick = () => {
+          panel.parentNode.removeChild(panel);
+        }
+
+        // function to handle displaying the icons
+        if (msgType === 'warning') {
+          msg.style.backgroundImage = 'url(icons/warning.png)';
+          panel.style.backgroundColor = 'red';
+        } else if (msgType === 'chat') {
+          msg.style.backgroundImage = 'url(icons/chat.png)';
+          panel.style.backgroundColor = 'aqua';
+        } else {
+          msg.style.paddingLeft = '20px';
+        }
+      }
+
+      const btn = document.querySelector('button');
+
+      // Why we haven't included the parentheses'()' after the function name?
+      //  - We don't want to call the function immediately
+      //  - only after the button has been clicked
+      // btn.onclick = displayMessage;
+      btn.onclick = () => displayMessage('Brian: Hi there, how are you today?', 'chat');
+
+    </script>
+  </body>
+</html>
