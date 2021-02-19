@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button>Change Color</button>
+  
+  <script>
+    const btn = document.querySelector('button');
+
+    function random(number) {
+      return Math.floor(Math.random()*(number+1));
+    }
+
+    function bgChange() {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+      document.body.style.backgroundColor = rndCol;
+    }
+
+
+    // 1. Event handler properties.
+
+    // The color changes only when the button is double-clicked.
+    btn.ondblclick = bgChange;
+
+    // The color changes when a key is pressed on the keyboard.
+    window.onkeypress = bgChange;
+
+    // The color changes when the mouse pointer hovers over the button.
+    btn.onmouseover = bgChange;
+
+    // The color changes when the pointer moves off the button, respectively.
+    btn.onmouseout = bgChange;
+
+
+    // 2. addEventListener() and removeEventListener()
+    btn.addEventListener('click', bgChange);
+    btn.removeEventListener('click', bgChange);
+
+
+    // 3. Other event concepts
+    // Event object = event = evt = e
+    function backChange(e) {
+        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+
+        // e      : an event object
+        // target : the property of the event object is always a reference to the element the event occurred upon.
+        //          in this example, we are setting a random background color on the button, not the page.
+        e.target.style.backgroundColor = rndCol;
+        console.log(e);
+    }
+
+    btn.addEventListener('click', backChange);
+  </script>
+</body>
+</html>
