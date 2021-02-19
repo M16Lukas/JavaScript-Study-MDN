@@ -13,12 +13,12 @@
 
 When an event is fired on an element that has parent elements (in this case, the "video" has the "div" as a parent), modern browsers run two different phases — the capturing phase and the bubbling phase.
 
-> In the **capturing phase**
+In the **capturing phase**
 
 - The browser checks to see if the element's outer-most ancestor (html) has an onclick event handler registered on it for the capturing phase, and runs it if so.
 - Then it moves on to the next element inside "html" and does the same thing, then the next one, and so on until it reaches the element that was actually selected.
 
-> In the **bubbling phase**, the exact opposite occurs
+In the **bubbling phase**, the exact opposite occurs
 
 - The browser checks to see if the element selected has an onclick event handler registered on it for the bubbling phase, and runs it if so.
 - Then it moves on to the next immediate ancestor element and does the same thing, then the next one, and so on until it reaches the "html" element.
