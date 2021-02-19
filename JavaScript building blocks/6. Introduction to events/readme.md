@@ -11,6 +11,8 @@
 
 ### **Bubbling** and **capturing** explained
 
+- [Source](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
 When an event is fired on an element that has parent elements (in this case, the "video" has the "div" as a parent), modern browsers run two different phases — the capturing phase and the bubbling phase.
 
 In the **capturing phase**
@@ -24,5 +26,3 @@ In the **bubbling phase**, the exact opposite occurs
 - Then it moves on to the next immediate ancestor element and does the same thing, then the next one, and so on until it reaches the "html" element.
 
 ![bubbling-capturing](https://user-images.githubusercontent.com/46748131/108507273-6a42ff00-72fd-11eb-95f7-aab28a454d10.png)
-
-- [Source](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
