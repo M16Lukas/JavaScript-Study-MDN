@@ -8,7 +8,7 @@ JavaScript의 핵심 기본 기능에 대한 이해를 넓히기 위해 조건�
 |  2   |                    반복문                    |           2. Looping code           |
 |  3   |              함수 — 코드 재사용              | 3. Function-reusable blocks of code |
 |  4   |                 함수 만들기                  |     4. Build your own function      |
-|  5   |             함수는 값을 반환한다             |                                     |
-|  6   |            Introduction to events            |                                     |
+|  5   |             함수는 값을 반환한다             |      5. Function return values      |
+|  6   |            Introduction to events            |      6. Introduction to events      |
 |      |
 | 평가 |                Image gallery                 |                                     |
