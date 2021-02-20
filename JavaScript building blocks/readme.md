@@ -11,4 +11,4 @@ JavaScript의 핵심 기본 기능에 대한 이해를 넓히기 위해 조건�
 |  5   |             함수는 값을 반환한다             |      5. Function return values      |
 |  6   |            Introduction to events            |      6. Introduction to events      |
 |      |
-| 평가 |                Image gallery                 |                                     |
+| 평가 |                Image gallery                 |            gallery-start            |
