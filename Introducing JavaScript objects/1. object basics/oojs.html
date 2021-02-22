@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+      let person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio: function () {
+          alert(`${this.name[0]} ${this.name[1]} is ${this.age} years old. He likes ${this.interests[0]} and ${this.interests[1]}.`);
+        },
+        greeting: function() {
+          // this : 지금 동작하고 있는 코드를 가지고 있는 겍체
+          alert(`Hi! I\'m ${this.name[0]}.`);
+        }
+      };
+
+      // 객체 멤버 설정
+      // 새로운 멤버 생성
+      person['eyes'] = 'hazel';
+      person.farewell = function () {alert('Bye everybody!');}
+
+      // 대괄호("[]") 표현의 이점 : 멤버의 이름과 값을 동적으로 사용가능하다.
+      let myDataName = 'height';
+      let myDataValue = '1.75m';
+      person[myDataName] = myDataValue;
+
+      let myNotification = new Notification('Hello');
+    </script>
+</html>
